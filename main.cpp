@@ -3,7 +3,8 @@
 #define fech 40000 // Fréquence d'échantillonnage souhaitée
 #define TAILLE_BUFFER_SIG (fech/20) // Pour acquisition de 2000 echantillons
 
-Serial pc(USBTX, USBRX);
+extern void Sauve_USB(float *,int ) ;
+extern Serial pc ;
 
 /* Entrées sorties */
 AnalogIn entree(PF_10); // A5 connecteur Arduino
